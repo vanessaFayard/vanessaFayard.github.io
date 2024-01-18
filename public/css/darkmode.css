@@ -1,0 +1,59 @@
+/* @media (prefers-color-scheme: dark) { */
+/* TODO : ne pas mettre les variables dans :root mais dans html, et gérer les variables dans html.dark-monde
+ * Ne pas utiliser le #000 mais adoucir le noir
+ * voir la css des sites de marien
+ */
+
+:root {
+    --dark-color-gray-20: #e0e0e0;
+    --dark-color-gray-50: #C0C0C0;
+    --dark-color-gray-90: #dad8d8;
+    --dark-color-black: #fff9ed;
+
+    --dark-text-color: var(--dark-color-black);
+
+    --dark-text-color-link: var(--dark-text-color);
+    --dark-text-color-link-active: #d2cac7;
+    --dark-text-color-link-visited: var(--dark-text-color-link-active);
+
+    --dark-background-body-color: #000000;
+    }
+
+body.dark-mode {
+    color: var(--dark-text-color);
+    background-color: var(--dark-background-body-color);
+    height: 100vh;
+}
+
+body.dark-mode a[href] {
+	color: var(--dark-text-color-link);
+}
+
+body.dark-mode a[href]:visited {
+	color: var(--dark-text-color-link-visited);
+}
+body.dark-mode a[href]:hover,
+body.dark-mode a[href]:active {
+	color: var(--dark-text-color-link-active);
+}
+
+body.dark-mode .card {
+    border-color: var(--dark-color-black);
+}
+
+body.dark-mode  .header {
+	border-bottom: var(--border-with) solid var(--dark-color-black);
+}
+
+body.dark-mode header {
+	border-right: var(--border-with) solid var(--dark-color-black);
+	border-left: var(--border-with) solid var(--dark-color-black);
+}
+
+body.dark-mode .logo {
+	border-right: var(--border-with) solid var(--dark-color-black);
+}
+
+body.dark-mode .card {
+	border: var(--border-with) solid var(--dark-color-black);
+}
