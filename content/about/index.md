@@ -1,9 +1,10 @@
 ---
 layout: layouts/base.njk
 eleventyNavigation:
-  key: About Me
+  key: Un peu de moi
   order: 3
 ---
-# About Me
+# Un peu de moi / À propos
 
+// TODO
 I am a person that writes stuff.

@@ -1,5 +1,5 @@
 module.exports = {
-	title: "Blog Vanessa Fayard",
+	title: "Vanessa Fayard",
 	url: "https://example.com/",
 	language: "fr",
 	description: "Blog où je dépose des billets de partage, retour d'expérience, perso, autour de mon parcours professionnel et du développement web",

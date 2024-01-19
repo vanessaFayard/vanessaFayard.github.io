@@ -24,10 +24,12 @@
 
 	--text-color: var(--color-black);
 	--text-color-link: var(--color-black);
-	--text-color-link-active: #554944;
-	--text-color-link-visited: var(--text-color-link-active);
+	--text-color-link-active: var(--text-color-link);
+	--text-color-link-visited: var(--text-color-link);
 
 	--border-with: 2px;
+	--border-with-lg: 4px;
+	--border-with-xl: 6px;
 
 	--syntax-tab-size: 2;
 }
@@ -113,7 +115,6 @@
 		 url('../webfonts/overpass-mono/overpass-mono-v16-latin-600.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
-
 /* poppins-200 - latin */
 @font-face {
 	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -154,6 +155,16 @@
 		 url('../webfonts/poppins/poppins-v20-latin-600.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
+/* bebas-neue-regular - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../webfonts/bebas-neue/bebas-neue-v14-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+		 url('../webfonts/bebas-neue/bebas-neue-v14-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
 
 
 /* Global stylesheet */
@@ -179,7 +190,7 @@ body {
 }
 
 h1, h2, h3 {
-	font-family: var(--font-family-monospace);
+	font-family: var(--font-family);
 	margin-top: 25px;
 }
 
@@ -256,7 +267,7 @@ a[href] {
 	color: var(--text-color-link);
 }
 a[href]:visited {
-	color: var(--text-color-link-visited);
+	color: var(--text-color-link);
 }
 a[href]:hover,
 a[href]:active {
@@ -336,7 +347,7 @@ code {
 }
 
 /* Header */
-.header {
+header {
 	border-bottom: var(--border-with) solid var(--color-black);
 }
 
@@ -345,29 +356,40 @@ header:after {
 	display: table;
 	clear: both;
 }
-.logo {
+.home {
 	border-right: var(--border-with) solid var(--color-black);
-	padding: 2rem;
+	padding: 2.5rem;
+	text-align: center;
 }
-header {
+.header {
 	display: flex;
 	justify-content: space-between;
-	gap: 1em .5em;
-	/* flex-wrap: wrap; */
 	align-items: center;
-
-	border-right: var(--border-with) solid var(--color-black);
-	border-left: var(--border-with) solid var(--color-black);
 }
 
 .home-link {
-	font-size: 1.6rem; /* 16px /16 */
+	font-size: 3.2rem; /* 16px /16 */
 	font-weight: 700;
-	margin-right: 2em;
+	font-family: 'Bebas Neue';
+	text-decoration: none;
+	color: var(--color-black);
 }
-.home-link:link:not(:hover) {
+.home-link:hover {
 	text-decoration: none;
 }
+
+/* Footer */
+footer {
+	border-top: var(--border-with) solid var(--color-black);
+	border-bottom: var(--border-with) solid var(--color-black);
+}
+.footer, .header {
+	border-right: var(--border-with) solid var(--color-black);
+	border-left: var(--border-with) solid var(--color-black);
+}
+.footer {
+	padding: 2.5rem;
+} 
 
 /* Nav */
 nav {
@@ -404,7 +426,6 @@ nav {
 }
 
 /* Posts list */
-
 .postlist-item {
 	display: flex;
 	flex-wrap: wrap;
@@ -412,14 +433,7 @@ nav {
 	/* counter-increment: start-from -1; */
 	margin-bottom: 1em;
 }
-/* .postlist-item:before {
-	display: inline-block;
-	pointer-events: none;
-	content: "" counter(start-from, decimal-leading-zero) ". ";
-	line-height: 100%;
-	text-align: right;
-	margin-left: -1.5rem;
-} */
+
 .postlist-date {
 	font-size: 1.3rem; /* 13px /16 */
 }
