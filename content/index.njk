@@ -7,7 +7,7 @@ numberOfLatestPostsToShow: 8
 ---
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Les derniers articles</h1>
+<h1><span>Les derniers articles</span></h1>
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
