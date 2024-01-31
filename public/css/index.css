@@ -408,7 +408,8 @@ nav {
 .nav-item {
 	display: inline-block;
 	margin-right: 1em;
-	text-transform: uppercase;
+	padding: 10px 20px;
+	/* text-transform: uppercase; */
 }
 .nav-item a[href]:not(:hover) {
 	text-decoration: none;
@@ -531,4 +532,16 @@ a[href].header-anchor:focus,
 
 h2 + .header-anchor {
 	font-size: 2rem;
+}
+
+/* Content page */
+.content-page {
+	border-top: var(--border-with-lg) solid var(--color-black);
+	border-right: var(--border-with-lg) solid var(--color-black);
+	background-color: var(--background-body-color);
+	padding: 35px 0;
+}
+.content-tag {
+	display: inline-block;
+	background-color: var(--background-body-color);
 }
