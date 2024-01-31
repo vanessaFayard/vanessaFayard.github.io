@@ -21,28 +21,30 @@
 		4. Learn more: https://github.com/11ty/eleventy-plugin-bundle
 		#}
 
-		{#- Add an arbitrary string to the bundle #}
-		{%- css %}* { box-sizing: border-box; }{% endcss %}
 		{#- Add the contents of a file to the bundle #}
 		{%- css %}{% include "public/css/index.css" %}{% endcss %}
-		{#- Or add from node_modules #}
-		{# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
 
 		{#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
 		{#- <style>{% getBundle "css" %}</style> #}
 		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
 		<link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
+
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
 		<header>
-			<div class="container">
+			<div class="container container-nav">
 				<div class="d-flex header">
 					<div class="home">
 						<a href="/" class="home-link">{{ metadata.title }}</a>
 					</div>
-					<div>
+					<button id="burger" class="btn-burger toggle-responsive" tabindex="0">
+						<span class="top"></span>
+						<span class="middle"></span>
+						<span class="bottom"></span>
+					</button>
+					<div id="mainNav">
 						<nav>
 							<h2 class="visually-hidden">Top level navigation menu</h2>
 							<ul class="nav">
@@ -74,6 +76,8 @@
 			</div>
 		</footer>
 
-		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
+
+	{% js %}{% include "public/js/script.js" %}{% endjs %}
+	<script src="{% getBundleFileUrl "js" %}"></script>
 	</body>
 </html>
