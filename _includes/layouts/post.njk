@@ -6,33 +6,27 @@ layout: layouts/base.njk
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
 
 <div class="illu-bg illu-bg-content"></div>
-<div class="container">
-	<div class="container-content">
-		<h1>{{ title }}</h1>
-
-		{{ content | safe }}
+<article>
+	<div class="container">
+		<div class="container-content">
+			<h1><span>{{ title }}</span></h1>
+		</div>
+		<div class="content-tag">
+			<time class="postlist-date" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate("dd/MM/yy") }}</time>
+			{% for tag in post.data.tags | filterTagList %}
+			{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+			<a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %} <span class="post-tag"> - </span>{% endif %}
+			{% endfor  %}
+		</div>
+		<div class="content-page">
+			<div class="container-content">
+				{{ content | safe }}
+			</div>
+		</div>
 	</div>
-</div>
+</article>
 
 
 
-<ul class="post-metadata">
-	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
-	{%- for tag in tags | filterTagList %}
-	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
-	{%- endfor %}
-</ul>
 
 
-
-{%- if collections.posts %}
-{%- set previousPost = collections.posts | getPreviousCollectionItem %}
-{%- set nextPost = collections.posts | getNextCollectionItem %}
-{%- if nextPost or previousPost %}
-<ul class="links-nextprev">
-	{%- if previousPost %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-	{%- if nextPost %}<li>Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-</ul>
-{%- endif %}
-{%- endif %}
