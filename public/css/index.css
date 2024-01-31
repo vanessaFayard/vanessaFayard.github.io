@@ -514,6 +514,7 @@ nav {
 .card-article {
 	border: var(--border-with) solid var(--color-black);
 	background-color: var(--background-body-color);
+	box-shadow: -8px 8px 0px 0px var(--color-black); 
 }
 .card-header {
 	border-bottom: var(--border-with) solid var(--color-black);
