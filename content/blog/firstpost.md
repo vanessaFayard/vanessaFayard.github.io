@@ -1,17 +1,22 @@
 ---
-title: Ceci est mon test
-description: This is a post on My Blog about agile frameworks.
-date: 2023-01-19
-categories: 
-  - Dev
+title: “Tout le monde se fout de ce que vous faites”
+description: Ceci est mon premier billet, et comme prévu, il est chaotique, et ça me va.
+date: 2024-02-08
 tags:
-  - tag
+  - billet perso
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+Des mois que j”y pense : reprendre un blog.
 
-## Section Header
+Mais comme beaucoup, il reste toujours les questions : pourquoi ? Pour qui ? Qui va me lire ? Et si aujourd’hui, je me lance, c’est parce que les seules réponses que j’ai envie de donner c’est : pourquoi pas, pour moi, moi. Et c’est tout ce qui compte.
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+Avant d’écrire ce premier article, j’ai fait une liste de ce que je voulais partager ici, comme pour me convaincre que c’est une bonne idée, que j’ai raison de me lancer, et que me donner des objectifs moyens termes comme pour m’excuser de l’énergie que j’ai mis à faire ce blog. Et je suis tombé sur une publication de Simon Delannoy : “tout le monde se fout de ce que vous faites”.
+
+Il partageait des retours d’expérience de gens qui n’osaient pas se lancer par peur du jugement, peur de ne pas être intéressant, peur qu’on se moque. Si je pense à ce blog, je rajouterai la peur de ne pas me lire, et même peur qu’on me lise.
+
+Et en lisant ce constat, un peu cynique, mais si vrai, j’ai réalisé qu’il avait raison : “tout le monde s’en fou de ce que je fais”, alors pourquoi me limiter ?
+
+Je vais me louper, je vais flop, je vais laisser des fautes d’orthographe, faire des phrases à rallonge, des articles de 5 lignes, et d’autres 5 pages, parler de pro, et de perso, et peut être pas. Ça n’a pas d’importante, parce que si tout le monde s’en fou, pas de pression, et pas de raison de rendre cette expérience insurmontable, de la laisser sur mon ordi, et ne pas la partager.
+
+Ceci est mon premier billet, et comme prévu, il est chaotique, et ça me va.
 
