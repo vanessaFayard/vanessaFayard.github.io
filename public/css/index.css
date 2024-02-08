@@ -201,9 +201,9 @@ html {
 	overflow-y: scroll;
 	font-size: 62.5%;
 }
-body {
+/* body {
 	height: 100vh;
-}
+} */
 
 h1, h2, h3 {
 	font-family: var(--font-family);
@@ -295,7 +295,7 @@ a[href]:active {
 
 .illu-bg {
 	background-repeat: no-repeat;
-	background-position: right 30px top -70px;
+	background-position: right 5% top -70px;
 	background-size: 500px;
 	position: absolute;
 	content: ' ';
@@ -311,9 +311,27 @@ a[href]:active {
 .illu-bg-content {
 	background-image: url('../img/illustrations/bg-content-blog.png');
 }
+.illu-bg-page {
+	background-image: url('../img/illustrations/bg-content-page.png');
+}
+
+
+.illu-bg-grid {
+	background-image: url('../img/illustrations/bg-grid.png');
+	background-repeat: no-repeat;
+	background-position: left 0px bottom 80px;
+}
+
+
+
 @media (max-width: 576px) {
 	.illu-bg {
 		background-position: right -120px top -15px;
+	}
+}
+@media (min-width: 1700px) {
+	.illu-bg {
+		background-position: right 10% top -70px;
 	}
 }
 .links-nextprev {
@@ -384,20 +402,6 @@ header:after {
 .home-link:hover {
 	text-decoration: none;
 }
-
-/* Footer */
-footer {
-	border-top: var(--border-with) solid var(--color-black);
-	border-bottom: var(--border-with) solid var(--color-black);
-	margin-top: 65px;
-}
-.footer, .header {
-	border-right: var(--border-with) solid var(--color-black);
-	border-left: var(--border-with) solid var(--color-black);
-}
-.footer {
-	padding: 2.5rem;
-} 
 
 /* Nav */
 nav {
@@ -625,4 +629,24 @@ h2 + .header-anchor {
 .content-tag {
 	display: inline-block;
 	background-color: var(--background-body-color);
+}
+
+/* Footer */
+footer {
+	border-top: var(--border-with) solid var(--color-black);
+	border-bottom: var(--border-with) solid var(--color-black);
+	margin-top: 65px;
+	background-color: var(--background-body-color);
+	position: relative;
+	z-index: 5;
+}
+.footer, .header {
+	border-right: var(--border-with) solid var(--color-black);
+	border-left: var(--border-with) solid var(--color-black);
+}
+.footer {
+	padding: 2.5rem;
+} 
+.credits {
+	font-family: var(--font-family-monospace);
 }

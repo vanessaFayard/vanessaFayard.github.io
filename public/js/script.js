@@ -24,3 +24,15 @@ burger.addEventListener('click', function() {
 
 });
 
+// Background image grid
+// window.addEventListener('DOMContentLoaded', function() {
+    // var content = document.querySelector('.content');
+    var main = document.querySelector('.main');
+    console.log((main.scrollHeight));
+    console.log( window.innerHeight);
+    
+    if ((main.scrollHeight) > window.innerHeight) {
+        main.classList.add('illu-bg-grid');
+    }
+// });
+
