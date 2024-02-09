@@ -14,9 +14,9 @@ eleventyComputed:
   title: Catégorie “{{ tag }}”
 permalink: /tags/{{ tag | slugify }}/
 ---
-<h1>Les posts qui parlent de <span>{{ tag }}</span></h1>
+<h1><span>Les articles "{{ tag }}"</span></h1>
 
 {% set postslist = collections[ tag ] %}
 {% include "postslist.njk" %}
 
-<p><a class="btn" href="/tags/">Toutes les catégories</a></p>
+<div><a class="btn" href="/tags/">Toutes les catégories</a></div>
