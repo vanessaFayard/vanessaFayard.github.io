@@ -193,7 +193,7 @@ body {
 	padding: 0;
 	margin: 0 auto;
 	font-family: var(--font-family);
-	font-size: 1.6rem;
+	font-size: 2rem;
 	color: var(--text-color);
 	background-color: var(--background-body-color);
 }
@@ -210,9 +210,10 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 4rem;
+	font-size: 4.2rem;
 	margin: 0;
 	padding: 85px 0;
+	max-width: 800px;
 }
 h1 span {
 	background: var(--background-body-color);
@@ -269,7 +270,7 @@ a[href]:active {
 	color: var(--text-color) !important;
 	font-family: var(--font-family-monospace);
 	font-weight: bold;
-
+	box-shadow: -8px 8px 0px 0px var(--color-black);
 }
 .btn-yellow {
 	background-color: var(--color-yellow);
@@ -501,6 +502,9 @@ nav {
 	top: -11px;
 }
 
+.social-links a {
+	padding: 5px 15px;
+}
 
 /* Posts list */
 .postlist {
@@ -509,6 +513,7 @@ nav {
 	grid-gap: 25px;
 	list-style: none;
 	padding: 0;
+	margin-bottom: 55px;
 }
 @media (max-width: 992px) {
 	.postlist {
@@ -551,7 +556,7 @@ nav {
 
 .postlist-date, .post-tag {
 	font-family: var(--font-family-monospace);
-	font-size: 1.3rem; /* 13px /16 */
+	font-size: 1.8rem; /* 13px /16 */
 	word-spacing: -0.5px;
 }
 
@@ -599,7 +604,7 @@ nav {
 .header-anchor {
 	text-decoration: none;
 	font-style: normal;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	margin-left: .1em;
 }
 a[href].header-anchor,
@@ -616,7 +621,7 @@ a[href].header-anchor:focus,
 }
 
 h2 + .header-anchor {
-	font-size: 2rem;
+	font-size: 2.2rem;
 }
 
 /* Content page */

@@ -4,9 +4,9 @@ layout: layouts/home.njk
 eleventyComputed:
   title: Les catégories
 ---
-<h1>Par ici pour voir toutes les catégories</h1>
+<h1><span>Toutes les catégories</span></h1>
 
-<ul>
+<ul class="tags-list">
 {% for tag in collections.all | getAllTags | filterTagList %}
 	{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
 	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
