@@ -13,7 +13,7 @@ layout: layouts/base.njk
 		</div>
 		<div class="content-tag">
 			<time class="postlist-date" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate("dd/MM/yy") }}</time>
-			{% for tag in post.data.tags | filterTagList %}
+			{% for tag in tags | filterTagList %}
 			{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
 			<a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %} <span class="post-tag"> - </span>{% endif %}
 			{% endfor  %}

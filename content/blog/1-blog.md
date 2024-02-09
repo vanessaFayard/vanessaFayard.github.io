@@ -6,11 +6,11 @@ tags:
   - billet perso
 ---
 
-Des mois que j”y pense : reprendre un blog.
+Des mois que j”y pense : reprendre un <strong>blog</strong>.
 
 Mais comme beaucoup, il reste toujours les questions : pourquoi ? Pour qui ? Qui va me lire ? Et si aujourd’hui, je me lance, c’est parce que les seules réponses que j’ai envie de donner c’est : pourquoi pas, pour moi, moi. Et c’est tout ce qui compte.
 
-Avant d’écrire ce premier article, j’ai fait une liste de ce que je voulais partager ici, comme pour me convaincre que c’est une bonne idée, que j’ai raison de me lancer, et que me donner des objectifs moyens termes comme pour m’excuser de l’énergie que j’ai mis à faire ce blog. Et je suis tombé sur une publication de Simon Delannoy : “tout le monde se fout de ce que vous faites”.
+Avant d’écrire ce premier article, j’ai fait une liste de ce que je voulais partager ici, comme pour me convaincre que c’est une bonne idée, que j’ai raison de me lancer, et que me donner des objectifs moyens termes comme pour m’excuser de l’énergie que j’ai mis à faire ce blog. Et je suis tombé sur une publication de <a href="https://www.instagram.com/simondelannoy/" target="_blank" rel="nofollow" alt="instagram Simon Delannoy">Simon Delannoy</a> : “tout le monde se fout de ce que vous faites”.
 
 Il partageait des retours d’expérience de gens qui n’osaient pas se lancer par peur du jugement, peur de ne pas être intéressant, peur qu’on se moque. Si je pense à ce blog, je rajouterai la peur de ne pas me lire, et même peur qu’on me lise.
 
