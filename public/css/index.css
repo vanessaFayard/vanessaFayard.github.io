@@ -252,6 +252,14 @@ li {
 	line-height: 1.5;
 }
 
+.list-links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 35px;
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
 a[href] {
 	color: var(--text-color-link);
 }
@@ -272,6 +280,10 @@ a[href]:active {
 	font-weight: bold;
 	box-shadow: -8px 8px 0px 0px var(--color-black);
 }
+.btn:hover {
+	box-shadow: -4px 4px 0px 0px var(--color-black);
+}
+
 .btn-yellow {
 	background-color: var(--color-yellow);
 }
