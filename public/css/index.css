@@ -260,6 +260,11 @@ li {
 	margin-bottom: 60px;
 }
 
+.list-element {
+	max-width: 14px;
+	margin-right: 8px;
+}
+
 a[href] {
 	color: var(--text-color-link);
 }
