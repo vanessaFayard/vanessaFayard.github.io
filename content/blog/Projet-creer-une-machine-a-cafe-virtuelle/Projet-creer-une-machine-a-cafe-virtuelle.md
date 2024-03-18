@@ -113,10 +113,12 @@ Quand j'ai finalisé le plus gros de l'interface, j'ai pu démarrer les animatio
 
 C'est là qu'est le point complexe du projet : **comment remplir en CSS un contenant arrondi ?**
 
-Je pense qu'il existe plusieurs méthodes, et certaines plus simples, mais pour ce challenge, j'ai privilégié `clip-path: path()`. J'ai défini ma forme de tasse avec `path()`, et j'ai réalisé la même chose pour la `<div>` qui contient le liquide.
+Je pense qu'il existe plusieurs méthodes, et certaines plus simples, mais pour ce challenge, j'ai privilégié `clip-path: path()`*. J'ai défini ma forme de tasse avec `path()`, et j'ai réalisé la même chose pour la `<div>` qui contient le liquide.
 Ainsi, je peux animer de différentes façons, sans voir changer l'arrondi de ma tasse. 
 
 Une fois satisfaite de mes différentes animations, j'ai commencé de coder mon script. J'ai adapté mon html/css pour utiliser des attributs `data`, qui m'ont permis de gérer les différentes étapes de mon script.
+
+_*update : après vérification, l'animation n'était pas fonctionnelle sous Chrome avec `clip-path`. J'ai donc corrigé sur codepen mon scss et j'ai utilisé `border` et `border-radius` pour la forme de la tasse et animer le remplissage._
 
 </br>
 
