@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour ma prise de notes
 description: 
-date: 2024-03-22
+date: 2024-03-25
 tags:
   - reco - partage
 ---
