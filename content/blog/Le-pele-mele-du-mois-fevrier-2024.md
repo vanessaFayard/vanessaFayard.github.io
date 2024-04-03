@@ -51,10 +51,10 @@ Forcément, ici, il y aura de tout : du web, de vidéos, des articles, des outil
 
 ## Les liens en vrac
 
-<img class="list-element" alt="" src="/img/form-4.png"> Inspiration webdesign | mots clés : portfolio, gaming, design
+<img class="list-element" alt="" src="/img/form-4.png"> Inspiration webdesign | mots clé : portfolio, gaming, design
 <p><a href="https://matteosantoro.dev/" target="_blank" rel="nofollow">Matteo Santoro Dev | Portfolio</a> - <span class="credits link-credits">@Mateo Santoro</span></p>
 
-<img class="list-element" alt="" src="/img/form-4.png"> Inspiration webdesign | mots clés : neo-brutalism, design
+<img class="list-element" alt="" src="/img/form-4.png"> Inspiration webdesign | mots clé : neo-brutalism, design
 <p><a href="https://guiacirugiacardiaca.com/" target="_blank" rel="nofollow">Inicio</a> - <span class="credits link-credits">@Guia de  Cirugia Cardiaca</span></p>
 
 <img class="list-element" alt="" src="/img/form-4.png"> Jeu en ligne
