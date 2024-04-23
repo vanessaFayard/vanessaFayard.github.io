@@ -66,12 +66,12 @@ Je vais être honnête : c'est la partie de mon système que je met le + de côt
 ## Bonus
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px;">
-<div class="card-article d-inline-block img-article">
-  {% image "./capture-prise-note-2.png", "Capture du template page wiki" %}
+<div class="card-article d-inline-block img-article"  tabindex="-1">
+  {% image "./capture-prise-note-2.png", "" %}
   <p>Capture du template</p>
 </div>
-<div class="card-article d-inline-block img-article">
-  {% image "./capture-prise-note-1.png", "Capture d'un exemple page wiki" %}
+<div class="card-article d-inline-block img-article"  tabindex="-1">
+  {% image "./capture-prise-note-1.png", "" %}
   <p>Capture de la page wiki "Nommage BEM"</p>
 </div>
 </div>
