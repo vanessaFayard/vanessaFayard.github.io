@@ -35,8 +35,8 @@ Même si c'est un petit projet, je voulais faire les choses bien. Et surtout, j'
 J'ai ouvert un projet Figma, des dizaines d'onglets Pinterest, et j'ai construit un moodboard (planche d'inspiration).
 À partir de là, j'avais une idée plus précise du rendu que je voulais, la forme de la machine et de la tasse, les couleurs, et la disposition.
 
-<div class="card-article d-inline-block img-article">
-  {% image "./capture-moodboard.png", "Capture du moodbard avec les éléments et la charte graphique" %}
+<div class="card-article d-inline-block img-article"  tabindex="-1">
+  {% image "./capture-moodboard.png", "" %}
   <p>Capture du moodbard avec les éléments et la charte graphique</p>
 </div>
 
@@ -58,8 +58,8 @@ J'ai ouvert un projet Figma, des dizaines d'onglets Pinterest, et j'ai construit
 
 Ensuite, j'ai mis les différents éléments sur une page. C'était indispensable pour donner une unité au rendu, et cela m'a permis de réfléchir et d'anticiper les étapes à suivre.
 
-<div class="card-article d-inline-block img-article">
-  {% image "./capture-maquette-v2.png", "Capture de la maquette du projet" %}
+<div class="card-article d-inline-block img-article"  tabindex="-1">
+  {% image "./capture-maquette-v2.png", "" %}
   <p>Capture de la maquette du projet</p>
 </div>
 
@@ -88,12 +88,12 @@ Au fur et à mesure, j'ai apporté quelques modifications sur la maquette : c'es
 Le projet n'est pas destiné à être responsive, mais j'ai quand même pensé à un affichage de secours.
 
 <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 25px;">
-<div class="card-article d-inline-block img-article">
-  {% image "./capture-projet-final.png", "Capture du projet final" %}
+<div class="card-article d-inline-block img-article"  tabindex="-1">
+  {% image "./capture-projet-final.png", "" %}
   <p>Capture du projet final</p>
 </div>
-<div class="card-article d-inline-block img-article">
-  {% image "./capture-mobile.png", "Capture de la page en format mobile" %}
+<div class="card-article d-inline-block img-article" tabindex="-1">
+  {% image "./capture-mobile.png", "" %}
   <p>Capture de la page en format mobile</p>
 </div>
 </div>

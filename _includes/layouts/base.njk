@@ -21,21 +21,21 @@
 
 	</head>
 	<body>
-		<a href="#skip" class="visually-hidden">Skip to main content</a>
+		<a href="#main" class="visually-hidden">Skip to main content</a>
 
-		<header>
+		<header role="banner">
 			<div class="container container-nav">
 				<div class="d-flex header">
 					<div class="home">
-						<a href="/" class="home-link" alt="logo homepage link">{{ metadata.title }}</a>
+						<a href="/" class="home-link" alt="logo homepage link" tabindex="-1">{{ metadata.title }}</a>
 					</div>
-					<button id="burger" class="btn-burger toggle-responsive" alt="button burger mobile" tabindex="0">
-						<span class="top"></span>
-						<span class="middle"></span>
-						<span class="bottom"></span>
-					</button>
 					<div id="mainNav">
-						<nav>
+						<nav role="navigation">
+							<button id="burger" class="btn-burger toggle-responsive" tabindex="0" title="menu">
+								<span class="top"></span>
+								<span class="middle"></span>
+								<span class="bottom"></span>
+							</button>
 							<h2 class="visually-hidden">Top level navigation menu</h2>
 							<ul class="nav">
 							{%- for entry in collections.all | eleventyNavigation %}
@@ -49,11 +49,11 @@
 
 		</header>
 
-		<main id="skip">
+		<main role="main" id="main" tabindex="-1">
 			{{ content | safe }}
 		</main>
 
-		<footer>
+		<footer role="contentinfo">
 			<div class="container footer">
 				<div class="social-links">
 					<a href="/feed/feed.xml">RSS</a>
