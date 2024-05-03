@@ -24,8 +24,8 @@
 
 	--text-color: var(--color-black);
 	--text-color-link: var(--color-black);
-	--text-color-link-active: var(--text-color-link);
-	--text-color-link-visited: var(--text-color-link);
+	--text-color-link-active: var(--color-gray-90);
+	--text-color-link-visited: var(--color-gray-90);
 
 	--border-with: 2px;
 	--border-with-lg: 4px;
@@ -396,6 +396,9 @@ pre:not([class*="language-"]) {
 }
 code {
 	word-break: break-all;
+	padding: 1px 3px;
+	line-height: 4rem;
+	border: 2px solid #00000021;
 }
 
 

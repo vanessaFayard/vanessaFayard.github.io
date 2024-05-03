@@ -1,9 +1,9 @@
 ---
-title: Le pèle mêle du mois - Mars 2024
+title: Le pêle-mêle du mois - Mars 2024
 description: "Ici il y aura de tout : du web, de vidéos, des articles, des outils en ligne, du jeux vidéos, du design… "
 date: 2024-04-03
 tags:
-  - pèle-mêle
+  - pêle-mêle
 ---
 
 On prend la même recette et on recommence. En préparant l'article, j'avais l'impression de ne pas avoir mis tant de choses que ça de côté, mais finalement, j'ai trouvé des pépites que je voulais partager ici.
