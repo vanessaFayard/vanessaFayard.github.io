@@ -1,9 +1,9 @@
 ---
-title: Le pèle mêle du mois - Février 2024
+title: Le pêle-mêle du mois - Février 2024
 description: "Ici il y aura de tout : du web, de vidéos, des articles, des outils en ligne, du jeux vidéos, du design… "
 date: 2024-03-01
 tags:
-  - pèle-mêle
+  - pêle-mêle
 ---
 
 C’est une catégorie qui me tient à cœur et qui a m'a convaincu de lancer ce blog : avoir un petit rendez-vous mensuel où je partage des choses aléatoires qui ont attirés mon attention.
