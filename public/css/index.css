@@ -219,7 +219,7 @@ h1 {
 	padding: 85px 0;
 	max-width: 800px;
 }
-h1 span {
+h1 span, h2 span, .subtitle span {
 	background: var(--background-body-color);
   }
 .header-homepage .title {
@@ -252,7 +252,14 @@ img {
 }
 
 .header-homepage .presentation {
-	max-width: 90%;
+	background-color: var(--background-body-color);
+}
+
+
+@media (min-width: 576px) {
+	.header-homepage .presentation {
+		max-width: 80%;
+	}
 }
 
 @media (max-width: 576px) {
