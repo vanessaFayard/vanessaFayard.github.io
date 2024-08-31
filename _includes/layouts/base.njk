@@ -7,16 +7,10 @@
 		<meta name="description" content="{{ description or metadata.description }}">
 		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
-		{#- Atom and JSON feeds included by default #}
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
-		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
-		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
-
-		{#- Add the contents of a file to the bundle #}
+		<meta name="generator" content="{{ eleventy.generator }}">
 		{%- css %}{% include "public/css/index.css" %}{% endcss %}
-
-		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
 		<link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
 
 	</head>
@@ -27,17 +21,17 @@
 			<div class="container container-nav">
 				<div class="d-flex header">
 					<div class="home">
-						<a href="/" class="home-link" alt="logo homepage link" tabindex="-1">{{ metadata.title }}</a>
+						<a href="/" class="home-link" alt="logo homepage link" tabindex="-1">Blog de Vanessa</a>
 					</div>
+					<button id="burger" class="btn-burger toggle-responsive" tabindex="0" title="menu">
+						<span class="top"></span>
+						<span class="middle"></span>
+						<span class="bottom"></span>
+					</button>
 					<div id="mainNav">
 						<nav role="navigation">
-							<button id="burger" class="btn-burger toggle-responsive" tabindex="0" title="menu">
-								<span class="top"></span>
-								<span class="middle"></span>
-								<span class="bottom"></span>
-							</button>
 							<h2 class="visually-hidden">Top level navigation menu</h2>
-							<ul class="nav">
+							<ul class="nav mobile-nav">
 							{%- for entry in collections.all | eleventyNavigation %}
 								<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
 							{%- endfor %}

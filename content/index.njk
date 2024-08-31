@@ -3,11 +3,11 @@ layout: layouts/home.njk
 eleventyNavigation:
   key: Accueil
   order: 1
-numberOfLatestPostsToShow: 8
+numberOfLatestPostsToShow: 4
 ---
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1><span>Les derniers articles</span></h1>
+<h2><span>Les derniers articles</span></h2>
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
@@ -15,6 +15,6 @@ numberOfLatestPostsToShow: 8
 
 {% set morePosts = postsCount - numberOfLatestPostsToShow %}
 {% if morePosts > 0 %}
-<div><a class="btn" href="/blog/">les archives</a></div>
+<div><a class="btn" href="/blog/">Voir tous les articles</a></div>
 {% endif %}
 

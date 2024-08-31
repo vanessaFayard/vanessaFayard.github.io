@@ -219,11 +219,24 @@ h1 {
 	padding: 85px 0;
 	max-width: 800px;
 }
-h1 span {
+h1 span, h2 span, .subtitle span {
 	background: var(--background-body-color);
   }
+.header-homepage .title {
+	padding-bottom: 15px;
+	font-size: 5rem;
+}
+.header-homepage .subtitle {
+	font-size: 1.8rem;
+	font-style: italic;
+	margin: 0;
+	margin-top: -20px;
+}
 h2 {
 	font-size: 3.2rem;
+}
+.header-homepage h2 {
+	margin-top: 0;
 }
 h3 {
 	font-size: 2.8rem;
@@ -234,6 +247,26 @@ img {
 	height: auto;
 }
 
+.header-homepage {
+	padding-bottom: 100px;
+}
+
+.header-homepage .presentation {
+	background-color: var(--background-body-color);
+}
+
+
+@media (min-width: 576px) {
+	.header-homepage .presentation {
+		max-width: 80%;
+	}
+}
+
+@media (max-width: 576px) {
+	.header-homepage {
+		padding-top: 250px;
+	}
+}
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden {
@@ -334,6 +367,9 @@ a[href]:active {
 
 .illu-bg-home {
 	background-image: url('../img/illustrations/bg-homepage.png');
+}
+.illu-bg-list {
+	background-image: url('../img/illustrations/bg-list.png');
 }
 .illu-bg-content {
 	background-image: url('../img/illustrations/bg-content-blog.png');
