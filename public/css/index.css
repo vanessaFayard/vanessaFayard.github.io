@@ -20,7 +20,8 @@
 	--color-orange: #FFC29F;
 	--color-red: #FF9F9F;
 
-	--background-body-color: #FFF9ED;
+	/*--background-body-color: #FFF9ED;*/
+	--background-body-color: #FAf7f0;
 
 	--text-color: var(--color-black);
 	--text-color-link: var(--color-black);
@@ -307,6 +308,31 @@ li {
 	margin-right: 8px;
 }
 
+ul.list-custom {
+	list-style: none;
+}
+
+ul.list-custom li {
+	padding-left: 5px;
+	padding-bottom: 15px;
+}
+
+ul.list-custom-circle {
+	list-style-image: url(../img/form-1-list.png);
+}
+
+ul.list-custom-star {
+	list-style-image: url(../img/form-2-list.png);
+}
+
+ul.list-custom-triangle {
+	list-style-image: url(../img/form-4-list.png);
+}
+
+ul.list-custom-circle-purple{
+	list-style-image: url(../img/form-3-list.png);
+}
+
 a[href] {
 	color: var(--text-color-link);
 }
@@ -380,9 +406,9 @@ a[href]:active {
 
 
 .illu-bg-grid {
-	background-image: url('../img/illustrations/bg-grid.png');
+	background-image: url('../img/illustrations/bg-grid.svg');
 	background-repeat: no-repeat;
-	background-position: left 0px bottom 80px;
+	background-position: left 0px bottom 200px;
 }
 
 

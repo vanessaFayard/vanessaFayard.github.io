@@ -3,7 +3,7 @@ title: 365 jours pour (r)éveiller ma carrière
 description: 2024 n'est pas encore fini, et pourtant je ressens l'envie de faire un bilan, faire pause sur ces 12 derniers mois de folies, de rebondissements et de challenge professionnel.
 date: 2024-10-03
 tags:
-  - billet perso
+  - carnet de route
 ---
 
 2024 n'est pas encore fini, et pourtant, j'ai envie d'appuyer sur pause.
